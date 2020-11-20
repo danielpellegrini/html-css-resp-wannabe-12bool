@@ -1,63 +1,18 @@
-.row {
-  width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-}
-
-/* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
-}
-
-#lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#lezioni {
-  text-align: center;
-}
-
-/* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 33%;
-}
-
-#steps {
-  text-align: center;
-}
-
 /* BLOCCO PERCHE */
-#why {
-  text-align: center;
-}
 
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  width: 100%;
-  margin-top: 80px;
-}
-
-#why .row img {
+#why .container img {
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px
 }
+/* END BLOCCO PERCHE */
 
 /* COMMON */
-.row::after {
-  content: '';
-  display: table;
-  clear: both;
+
+#lezioni,
+#steps,
+#why {
+  text-align: center;
 }
 
 .container.grey {
@@ -68,6 +23,53 @@ img {
   height: 200px;
 }
 
-.clear {
-  clear: both;
+/* END COMMON */
+
+/* MEDIA */
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  img {
+    height: 100px;
+    padding: 10px;
+  }
+
+  h1 {
+    padding-top: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  #lezioni,
+  #steps,
+  #why,
+  #text {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
 }
+
+/* Tablet (portrait and landscape) ----------- */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  img {
+    height: 100px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  img {
+    height: 150px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 1201px) {
+  img {
+    height: 200px;
+  }
+}
+
+/* END MEDIA */
